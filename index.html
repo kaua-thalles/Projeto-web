@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pagina inicial</title>
+</head>
+<body>
+  <div class="topbar">Frete grátis nas compras acima de R$ 299 <span>•</span> Aproveite nossas ofertas</div>
+
+  <header class="header container">
+    <a href="#" class="logo">URBAN.E-CO</a>
+    <nav class="nav">
+      <a href="#produtos">Produtos</a>
+      <a href="#novidades">Novidades</a>
+      <a href="#categorias">Categorias</a>
+      <a href="#sobre">Sobre</a>
+    </nav>
+    <div class="actions">
+      <label class="search">
+        <span>⌕</span>
+        <input type="search" id="busca-produto" placeholder="Buscar produtos..." />
+      </label>
+      <button><a href="carrinho.html" class="cart" aria-label="Acessar carrinho">🛒 <span id="contador-carrinho">0</span></a></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Nova coleção</span>
+          <h1>ENCONTRE O ESTILO QUE COMBINA COM VOCÊ</h1>
+          <p>Moda urbana, peças versáteis e preços acessíveis para acompanhar sua rotina com personalidade.</p>
+          <a href="#produtos" class="btn btn-dark">Comprar agora</a>
+
+          <div class="stats">
+            <div><strong>200+</strong><span>Marcas</span></div>
+            <div><strong>2.000+</strong><span>Produtos</span></div>
+            <div><strong>30.000+</strong><span>Clientes</span></div>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Destaque da coleção">
+         
+        </div>
+      </div>
+    </section>
+
+    <section class="brands">
+      <div class="container brand-row">
+        <span>VERSACE</span> <span>SAMSUNG</span> <span>APPLE</span> <span>RED DRAGON</span> <span>Calvin Klein</span>
+      </div>
+    </section>
+
+    <section id="produtos" class="section container">
+
+    <div class="section-heading">
+        <div>
+            <span class="eyebrow">Seleção especial</span>
+            <h2>PRODUTOS DISPONÍVEIS</h2>
+        </div>
+
+        <a href="#carrinho.html" class="btn btn-light">
+            Ver carrinho
+        </a>
+    </div>
+
+    <div class="filtros">
+
+    <label for="filtro-categoria">
+        Categoria:
+    </label>
+
+    <select id="filtro-categoria">
+        <option value="Todos">Todos</option>
+    </select>
+
+</div>
+
+<div id="mensagem-produtos"></div>
+
+<div
+    class="product-grid"
+    id="lista-produtos"
+></div>
+
+    <div class="product-grid" id="lista-produtos"></div>
+
+</section>
+
+    <section class="section container reviews">
+      <div class="section-heading"><div><span class="eyebrow">Avaliações</span><h2>NOSSOS CLIENTES</h2></div></div>
+      <div class="review-grid">
+        <article><div class="stars">★★★★★</div><h3>Sarah M. ✓</h3><p>“Gostei muito da qualidade e do caimento das peças. O pedido chegou rápido e bem embalado.”</p></article>
+        <article><div class="stars">★★★★★</div><h3>Alex K. ✓</h3><p>“Encontrei roupas que combinam com meu estilo e o site é simples de navegar.”</p></article>
+        <article><div class="stars">★★★★★</div><h3>James L. ✓</h3><p>“Boa variedade, preço justo e produtos com ótima aparência.”</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer id="sobre" class="footer">
+    <div class="container footer-grid">
+      <div><a class="logo" href="#">URBAN.E-CO</a><p>Moda que acompanha seu estilo em todos os momentos.</p></div>
+      <div><h4>EMPRESA</h4><a href="#">Sobre</a><a href="#">Contato</a><a href="#">Carreiras</a></div>
+      <div><h4>AJUDA</h4><a href="#">Suporte</a><a href="#">Entrega</a><a href="#">Trocas</a></div>
+    <div class="container copyright">© 2026 Urban.E-co. Todos os direitos reservados.</div>
+  </footer>
+
+  <script src="./scripts/models/Produtos.js"></script>
+</body>
+</html>
